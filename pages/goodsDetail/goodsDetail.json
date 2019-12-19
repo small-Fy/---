@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-goods-action": "../../lib/dist/goods-action/index",
+    "van-goods-action-icon": "../../lib/dist/goods-action-icon/index",
+    "van-goods-action-button": "../../lib/dist/goods-action-button/index",
+    "van-card": "../../lib/dist/card/index",
+    "van-stepper": "../../lib/dist/stepper/index"
+  }
+}

@@ -1,0 +1,23 @@
+<view class="newCategoryList">
+  <view class="newCategory_item" wx:for="{{newCategoryList}}" wx:key="{{index}}">
+    <view class="newCategory_name">{{item.name}}</view>
+    <view class="goodsList">
+      <view class="brand_item" wx:for="{{item.goodsList}}" wx:for-index="idx" wx:for-item="itemName" wx:key="{{idx}}" bindtap="toDetail" data-goodsId="{{itemName.id}}">
+        <view class="goods_start">
+          <view class="background">
+            <image src="{{itemName.list_pic_url}}"></image>
+          </view>
+          <view class="brand_name single_omit">{{itemName.name}}</view>
+          <view class="brand_price">￥{{itemName.retail_price}}元起</view>
+        </view>
+      </view>
+      <view class="goods_end">
+        <view class="text">{{item.name}}</view>
+        <view class="btn" bindtap="chooseClassify" data-index="{{index}}">
+          <image src="../../../images/address_right.png"></image>
+        </view>
+      </view>
+    </view>
+    <view class="bar"></view>
+  </view>
+</view>

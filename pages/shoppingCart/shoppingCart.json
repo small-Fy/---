@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-submit-bar": "../../lib/dist/submit-bar/index",
+    "van-swipe-cell": "../../lib/dist/swipe-cell/index",
+    "van-cell-group": "../../lib/dist/cell-group/index"
+  }
+}

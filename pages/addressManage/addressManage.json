@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "van-area": "../../lib/dist/area/index"
+  }
+}

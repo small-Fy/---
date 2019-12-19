@@ -1,0 +1,8 @@
+<view class="menu">
+  <view class="item" wx:for="{{channel}}" wx:key="{{index}}" bindtap="chooseClassify" data-index="{{index}}">
+    <view class="img">
+      <image src="{{item.icon_url}}"></image>
+    </view>
+    <view class="name">{{item.name}}</view>
+  </view>
+</view>

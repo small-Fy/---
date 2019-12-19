@@ -1,0 +1,35 @@
+<view class="sentiment">
+  <view class="pic_top">
+    <image src="../../images/scsjt.jpg"></image>
+  </view>
+
+  <view class="tab_bar">
+    <view class="comprehensive {{tabbarIndex===0?'font':''}}" bindtap="chooseTab" data-tabbarIndex="{{0}}">综合</view>
+    <view class="price">
+      <view class="price_text {{tabbarIndex===1?'font':''}}" bindtap="chooseTab" data-tabbarIndex="{{1}}">价格</view>
+      <view class="sort">
+        <!-- 降序 -->
+        <view class="desc" catchtap="sort" data-sort="desc">
+          <van-icon name="arrow-up" color="{{!sortFlag?'red':''}}" size="25rpx" />
+        </view>
+        <!-- 升序 -->
+        <view class="asc" catchtap="sort" data-sort="asc">
+          <van-icon name="arrow-down" color="{{sortFlag?'red':''}}" size="25rpx" />
+        </view>
+      </view>
+    </view>
+    <view class="classify {{tabbarIndex===2?'font':''}}" bindtap="chooseTab" data-tabbarIndex="{{2}}">分类</view>
+  </view>
+
+  <scroll-view scroll-y="true" style="height: 750rpx;" scroll-top='{{topNum}}'>
+    <view class="goodsList">
+      <view class="goods_item" wx:for="{{goodsData}}" wx:key="{{index}}">
+        <view class="background">
+          <image src="{{item.list_pic_url}}"></image>
+        </view>
+        <view class="brand_name single_omit">{{item.name}}</view>
+        <view class="brand_price">￥{{item.retail_price}}元起</view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

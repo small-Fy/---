@@ -1,0 +1,157 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.9.4",
+	"appid": "wxea3e71f138ee51ed",
+	"projectname": "shoppingMall-WeChat%20applet",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/special/special",
+					"pathName": "pages/special/special",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/classification/classification",
+					"pathName": "pages/classification/classification",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/newCategory/newCategory",
+					"pathName": "pages/newCategory/newCategory",
+					"query": "classifyId=1005000",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/me/me",
+					"pathName": "pages/me/me",
+					"query": "classifyId=1005000",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "pages/sentiment/sentiment",
+					"pathName": "pages/sentiment/sentiment",
+					"query": "classifyFlag=\" isHot\"",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "classifyFlag=\" isHot\"",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/shoppingCart/shoppingCart",
+					"pathName": "pages/shoppingCart/shoppingCart",
+					"query": "classifyFlag=\" isHot\"",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/order/order",
+					"pathName": "pages/order/order",
+					"query": "classifyFlag=\" isHot\"",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/addressList/addressList",
+					"pathName": "pages/addressList/addressList",
+					"query": "classifyFlag=\" isHot\"",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/addressManage/addressManage",
+					"pathName": "pages/addressManage/addressManage",
+					"query": "classifyFlag=\" isHot\"",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/searchInner/searchInner",
+					"pathName": "pages/searchInner/searchInner",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/positioning/positioning",
+					"pathName": "pages/positioning/positioning",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/collection/collection",
+					"pathName": "pages/collection/collection",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/opinion/opinion",
+					"pathName": "pages/opinion/opinion",
+					"scene": null
+				}
+			]
+		}
+	}
+}

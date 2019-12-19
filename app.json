@@ -1,0 +1,72 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/special/special",
+    "pages/classification/classification",
+    "pages/shoppingCart/shoppingCart",
+    "pages/me/me",
+    "pages/newCategory/newCategory",
+    "pages/sentiment/sentiment",
+    "pages/goodsDetail/goodsDetail",
+    "pages/order/order",
+    "pages/addressList/addressList",
+    "pages/addressManage/addressManage",
+    "pages/searchInner/searchInner",
+    "pages/positioning/positioning",
+    "pages/collection/collection",
+    "pages/opinion/opinion"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#c20c0c",
+    "navigationBarTitleText": "严选商城",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#C20C0C",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/ic_menu_choice_nor.png",
+        "selectedIconPath": "images/ic_menu_choice_pressed.png"
+      },
+      {
+        "pagePath": "pages/special/special",
+        "text": "专题",
+        "iconPath": "images/ic_menu_topic_nor.png",
+        "selectedIconPath": "images/ic_menu_topic_pressed.png"
+      },
+      {
+        "pagePath": "pages/classification/classification",
+        "text": "分类",
+        "iconPath": "images/ic_menu_sort_nor.png",
+        "selectedIconPath": "images/ic_menu_sort_pressed.png"
+      },
+      {
+        "pagePath": "pages/shoppingCart/shoppingCart",
+        "text": "购物车",
+        "iconPath": "images/ic_menu_shoping_nor.png",
+        "selectedIconPath": "images/ic_menu_shoping_pressed.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "images/ic_menu_me_nor.png",
+        "selectedIconPath": "images/ic_menu_me_pressed.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-icon": "../../lib/dist/icon/index",
+    "van-popup": "../../lib/dist/popup/index",
+    "van-button": "../../lib/dist/button/index",
+    "van-field": "../../lib/dist/field/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,14 @@
+<scroll-view class="scroll-view_H" scroll-x="true" style="width: 100%">
+  <view class="inner">
+    <view class="scroll-view-item" wx:for="{{topicList}}" wx:key="{{index}}">
+      <view class="picture">
+        <image src="{{item.item_pic_url}}"></image>
+      </view>
+      <view class="text_top">
+        <view class="goods_title single_omit">{{item.title}}</view>
+        <view class="goods_price">￥{{item.price_info}}起</view>
+      </view>
+      <view class="goods_subtitle single_omit">{{item.subtitle}}</view>
+    </view>
+  </view>
+</scroll-view>

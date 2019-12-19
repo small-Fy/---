@@ -1,0 +1,84 @@
+<import src="../../lib/wxParse/wxParse.wxml" />
+
+<view class="goodsDetail">
+  <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{2000}}" duration="{{500}}">
+    <block wx:for="{{goodsInfo.gallery}}" wx:key="{{index}}">
+      <swiper-item class="swiper-item">
+        <image src="{{item.img_url}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="goods_introduce">
+    <view class="goods_name single_omit">{{goodsInfo.info.name}}</view>
+    <view class="goods_brief single_omit">{{goodsInfo.info.goods_brief}}</view>
+    <view class="goods_price">￥{{goodsInfo.info.retail_price}}</view>
+  </view>
+
+  <view class="goods_parameter">
+    <view class="goods_title">商品参数</view>
+    <view class="attribute_item" wx:for="{{goodsInfo.attribute}}" wx:key="{{index}}">
+      <view class="attribute_name">{{item.name}}</view>
+      <view class="attribute_value">{{item.value}}</view>
+    </view>
+  </view>
+
+  <view class="goods_desc">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+  </view>
+
+  <view class="problem">
+    <view class="problem_title">
+      <text class="line"></text>
+      <text class="txt">常见问题</text>
+      <text class="line"></text>
+    </view>
+
+    <view class="goods_issue">
+      <view class="issue_item" wx:for="{{goodsInfo.issue}}" wx:key="{{index}}">
+        <view class="question">
+          <view class="point"></view>
+          <view class="text">{{item.question}}</view>
+        </view>
+        <view class="answer">{{item.answer}}</view>
+      </view>
+    </view>
+  </view>
+
+  <view class="recommended">
+    <view class="problem_title">
+      <text class="line"></text>
+      <text class="txt">大家都在看</text>
+      <text class="line"></text>
+    </view>
+    <view class="goodsList">
+      <view class="goods_item" wx:for="{{goodsInfo.productList}}" wx:key="{{index}}">
+        <view class="background">
+          <image src="{{item.list_pic_url}}"></image>
+        </view>
+        <view class="brand_name single_omit">{{item.name}}</view>
+        <view class="brand_price">￥{{item.retail_price}}元起</view>
+      </view>
+    </view>
+  </view>
+
+  <van-goods-action>
+    <van-goods-action-icon icon="{{collectionFlag?'like':'like-o'}}" text="收藏" bind:click="adddCollection" />
+    <van-goods-action-icon icon="cart-o" info="{{carNum}}" text="购物车" bind:click="toCar" />
+    <van-goods-action-button text="加入购物车" size="mini" type="warning" bind:click="clickAdd" />
+    <van-goods-action-button text="立即购买" size="mini" bind:click="clickBuy" />
+  </van-goods-action>
+</view>
+
+<van-popup show="{{ goodsGg }}" position="bottom" closeable custom-style="height: 35%;" bind:close="onClose" bind:click-overlay="closeGoods">
+  <view class="orderInfo">
+    <van-card num="{{carNum}}" price="{{goodsInfo.info.retail_price}}" desc="{{goodsInfo.info.goods_brief}}" title="{{goodsInfo.info.name}}" thumb="{{ goodsInfo.info.list_pic_url }}">
+      <view slot="footer">
+        <van-stepper value="{{carNum}}" min="0" max="{{maxNum}}" integer bind:change="addCart" />
+      </view>
+    </van-card>
+    <view class="btn">
+      <van-button type="danger" size="large" round bind:click="sureAdd">确定</van-button>
+    </view>
+  </view>
+</van-popup>

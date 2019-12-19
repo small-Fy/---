@@ -1,0 +1,12 @@
+<view class="opinion">
+  <view class="title">意见与反馈</view>
+  <view class="input">
+    <van-field
+    value="{{ value }}"
+    placeholder="请输入你的意见与反馈"
+    type="textarea"
+    border="{{ false }}"
+    bind:blur="confrim"
+  />
+  </view>
+</view>

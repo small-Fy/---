@@ -1,0 +1,18 @@
+<view class="collection">
+  <view class="header">我的收藏</view>
+
+  <scroll-view scroll-y="true" style="height: 1000rpx;">
+    <view class="inner">
+      <view class="goodsItem" wx:for="{{collectGoodsList}}" wx:key="{{index}}">
+        <view class="pic">
+          <image src="{{item.list_pic_url}}"></image>
+        </view>
+        <view class="text">
+          <view class="name single_omit">{{item.name}}</view>
+          <view class="price">￥{{item.retail_price}}</view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+
+</view>

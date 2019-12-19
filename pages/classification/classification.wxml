@@ -1,0 +1,31 @@
+<view class="classification">
+  <view class="search">
+    <van-search value="{{keyword}}" placeholder="请输入搜索关键词" shape="round" use-right-icon-slot="{{true}}" right-icon="cross" />
+  </view>
+  <view class="sidebar">
+    <van-sidebar active-key="{{ activeKey }}" custom-class="background:#c20c0c">
+      <van-sidebar-item title="{{item.name}}" wx:for="{{categoryList}}" wx:key="{{index}}" bind:click="chooseClassify" />
+    </van-sidebar>
+  </view>
+  <view class="inner">
+    <scroll-view scroll-y="true" style="height: 1020rpx;" scroll-top="{{scrollTop}}">
+      <view class="banner">
+        <image src="{{currentOne.wap_banner_url}}"></image>
+        <view class="front_desc">{{currentOne.front_desc}}</view>
+      </view>
+      <view class="classification_title">
+        <text class="line"></text>
+        <text class="txt">{{currentOne.name}}分类</text>
+        <text class="line"></text>
+      </view>
+      <view class="subList">
+        <view class="sub_item" wx:for="{{currentOne.subList}}" wx:key="{{index}}" bindtap="toNewCategory" data-index="{{index}}">
+          <view class="sub_picture">
+            <image src="{{item.wap_banner_url}}"></image>
+          </view>
+          <view class="sub_name single_omit">{{item.name}}</view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

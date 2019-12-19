@@ -1,0 +1,57 @@
+<view class="order">
+  <view class="top"></view>
+  <view class="address">
+    <view class="left">
+      <view class="address_left">
+        <view class="name">{{addressInfo.name}}</view>
+        <view class="tag" wx:if="{{addressInfo.is_default===1}}">默认</view>
+      </view>
+      <view class="address_info">
+        <view class="phone">{{addressInfo.mobile}}</view>
+        <view class="addressDetail">{{addressInfo.addressDetail}}</view>
+      </view>
+    </view>
+    <view class="right" bindtap="chooseAddress">
+      <van-icon name="arrow" />
+    </view>
+  </view>
+
+  <view class="orderInfo">
+    <view class="info_item">
+      <view class="info_left">商品合计</view>
+      <view class="info_right">￥{{allPrise}}</view>
+    </view>
+    <view class="info_item">
+      <view class="info_left">运费</view>
+      <view class="info_right">免运费</view>
+    </view>
+    <view class="info_item">
+      <view class="info_left">优惠券</view>
+      <view class="info_right">暂无</view>
+    </view>
+  </view>
+
+  <view class="carList">
+    <view class="goodsItem" wx:for="{{carList}}" wx:key="{{index}}">
+      <view class="goods_left">
+        <view class="goods_pic">
+          <image src="{{item.list_pic_url}}"></image>
+        </view>
+        <view class="goods_info">
+          <view class="goods_name">{{item.goods_name}}</view>
+          <view class="goods_price">￥{{item.retail_price}}</view>
+        </view>
+      </view>
+      <view class="goods_right">*{{item.number}}</view>
+    </view>
+  </view>
+
+  <view class="footer">
+    <view class="footer_left">
+      实付：￥{{allPrise}}
+    </view>
+    <view class="btn" bindtap="pay">
+      支付
+    </view>
+  </view>
+</view>

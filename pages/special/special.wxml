@@ -1,0 +1,10 @@
+<view class="special">
+  <view class="special_item" wx:for="{{topics}}" wx:key="{{index}}">
+    <view class="picture">
+      <image src="{{item.scene_pic_url}}"></image>
+    </view>
+    <view class="special_title single_omit">{{item.title}}</view>
+    <view class="special_subtitle single_omit">{{item.subtitle}}</view>
+    <view class="special_price single_omit">￥{{item.price_info}}元起</view>
+  </view>
+</view>

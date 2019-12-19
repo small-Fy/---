@@ -1,0 +1,119 @@
+.order {
+  background-color: #eee;
+  height: 100%
+}
+
+.order .top {
+  width: 100%;
+  height: 20rpx;
+  background: url(http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/address-bg-bd30f2bfeb.png);
+}
+
+.order .address{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  background-color: white
+}
+
+.order .address .left{
+  display: flex
+}
+
+.order .address .left .address_left{
+  margin-right: 20rpx;
+  width: 100rpx
+}
+
+.order .address .left .address_left .tag{
+  margin-top: 6rpx;
+  text-align: center;
+  border: 2rpx solid #c20c0c
+}
+
+
+.order .address .left .address_info .addressDetail{
+  margin-top: 6rpx
+}
+
+.order .address .right{
+  display: flex;
+  align-items: center
+}
+
+.order .orderInfo{
+  background-color: white;
+  margin-bottom: 20rpx
+}
+
+.order .orderInfo .info_item{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+  border-bottom: 2rpx solid #ccc;
+  color: #222
+}
+
+.order .carList{
+  background-color: white
+}
+
+.order .carList .goodsItem{
+  margin-bottom: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx
+}
+
+.order .carList .goodsItem .goods_left{
+  display: flex;
+  align-items: center
+}
+
+.order .carList .goodsItem .goods_left .goods_pic{
+  width: 200rpx;
+  height: 200rpx;
+  margin-right: 20rpx
+}
+
+.order .carList .goodsItem .goods_left .goods_pic image{
+  width: 100%;
+  height: 100%
+}
+
+.order .carList .goodsItem .goods_left .goods_info{
+  font-size: 30rpx
+}
+
+.order .carList .goodsItem .goods_left .goods_info .goods_name{
+  margin-bottom: 10rpx
+}
+
+.order .carList .goodsItem .goods_right{
+  display: flex;
+  align-items: center
+}
+
+.order .footer{
+  display: flex;
+  height: 100rpx;
+  line-height: 100rpx;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0
+}
+
+.order .footer .footer_left{
+  width: 70%;
+  padding-left: 40rpx
+}
+
+.order .footer .btn{
+  width: 30%;
+  text-align: center;
+  background-color: #c20c0c;
+  color: white
+}

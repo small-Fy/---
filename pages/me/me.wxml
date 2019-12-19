@@ -1,0 +1,31 @@
+<view class="me">
+  <view class="userInfo">
+    <view class="notLogin">
+      <view class="left" wx:if="{{userInfo===null}}">
+        <view class="userPic">
+          <image src="../../images/avatar.png"></image>
+        </view>
+        <view class="text">点击登录</view>
+      </view>
+      <view class="left" wx:if="{{userInfo}}">
+        <view class="userPic">
+          <image src="{{userInfo.avatarUrl}}"></image>
+        </view>
+        <view class="text">{{userInfo.nickName}}</view>
+      </view>
+      <view class="right">
+        <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">
+          <van-icon name="arrow" color="white" size="45rpx" />
+        </button>
+      </view>
+    </view>
+  </view>
+  <view class="operation_list">
+    <view class="operation_item {{index===9 || index===10?'border_type':''}}" wx:for="{{operationList}}" wx:key="{{index}}" bindtap="jump" data-url="{{item.url}}">
+      <view class="operation_icon">
+        <image src="{{item.path}}"></image>
+      </view>
+      <view class="operation_name">{{item.name}}</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-sidebar": "../../lib/dist/sidebar/index",
+    "van-sidebar-item": "../../lib/dist/sidebar-item/index",
+    "van-search": "../../lib/dist/search/index"
+  }
+}

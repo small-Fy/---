@@ -1,0 +1,38 @@
+<view class="searchInner">
+  <view class="header">
+    <van-search value="{{ keyword }}" placeholder="{{defaultKeyword}}" show-action bind:change="onSearch" bind:search="toSearch" bind:cancel="onCancel" shape="round" show-action/>
+  </view>
+
+  <view class="searchList" wx:if="{{historyData.length>0}}">
+    <view class="search_top">
+      <view class="text">搜索历史</view>
+      <view class="delete" bindtap="clearHistory">
+        <van-icon name="delete" size="40rpx" />
+      </view>
+    </view>
+
+    <view class="inner">
+      <view class="hot_item" wx:for="{{historyData}}" wx:key="{{index}}" bindtap="clickHistory" data-keyword="{{item.keyword}}">
+        {{item.keyword}}
+      </view>
+    </view>
+  </view>
+
+  <view class="hotKeywordList">
+    <view class="text">热门搜索</view>
+    <view class="inner">
+      <view class="hot_item {{item.is_hot===1?'font':''}}" wx:for="{{hotKeywordList}}" wx:key="{{index}}" bindtap="clickHot" data-keyword="{{item.keyword}}">
+        {{item.keyword}}
+      </view>
+    </view>
+  </view>
+
+</view>
+
+<van-popup show="{{searchFlag}}" bind:close="onClose" custom-style="height: 90%;" position="bottom" overlay="{{false}}">
+  <scroll-view scroll-y="true" style="height: 1000rpx;">
+    <view class="goodsItem" wx:for="{{goodsList}}" wx:key="{{index}}" bindtap="clickGoods" data-item="{{item}}">
+      {{item.name}}
+    </view>
+  </scroll-view>
+</van-popup>

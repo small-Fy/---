@@ -1,0 +1,71 @@
+@import '../../app.wxss';
+.home .header {
+  display: flex;
+  align-items: center;
+  padding: 10rpx 20rpx;
+}
+
+.home .header .position {
+  width: 200rpx;
+}
+
+
+
+.home .header .search {
+  width: 500rpx;
+}
+
+.home .title {
+  text-align: center;
+  margin: 40rpx 0;
+  font-size: 40rpx;
+  font-weight: 700;
+}
+
+.home .title_new {
+  height: 280rpx;
+  margin: 40rpx 0;
+  padding-top: 40rpx;
+  background-color: rgb(237, 244, 252)
+}
+
+.home .title_new .title_name{
+  text-align: center;
+  margin: 40rpx 0;
+  font-size: 40rpx;
+  font-weight: 700;
+  color: #aaa
+}
+
+.home .title_new .show_more{
+  width: 150rpx;
+  margin: 0 auto;
+  font-size: 32rpx;
+  color: #666;
+  padding: 16rpx 24rpx;
+  background-color: lightcyan
+}
+
+.home .title_hotGoods {
+  height: 280rpx;
+  margin: 40rpx 0;
+  padding-top: 40rpx;
+  background-color: lightgoldenrodyellow
+}
+
+.home .title_hotGoods .title_name{
+  text-align: center;
+  margin: 40rpx 0;
+  font-size: 40rpx;
+  font-weight: 700;
+  color: rgb(202, 148, 76)
+}
+
+.home .title_hotGoods .show_more{
+  width: 150rpx;
+  margin: 0 auto;
+  font-size: 32rpx;
+  color: #666;
+  padding: 16rpx 24rpx;
+  background-color: navajowhite
+}

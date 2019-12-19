@@ -1,0 +1,137 @@
+.shoppingCart{
+  background-color: #eee
+}
+
+.shoppingCart .shopping_top{
+  display: flex;
+  justify-content: space-between;
+  padding: 40rpx 30rpx
+}
+
+.shoppingCart .shopping_top .left{
+  display: flex;
+  align-items: center
+}
+
+.shoppingCart .shopping_top .left .cycle{
+  width: 10rpx;
+  height: 10rpx;
+  margin-right: 10rpx;
+  border: 2rpx solid #c20c0c;
+  border-radius: 50%
+}
+
+.shoppingCart .shopping_top .left .text{
+  font-size: 28rpx
+}
+
+.shoppingCart .shopping_top .middle{
+  display: flex;
+  align-items: center
+}
+
+.shoppingCart .shopping_top .middle .cycle{
+  width: 10rpx;
+  height: 10rpx;
+  margin-right: 10rpx;
+  border: 2rpx solid #c20c0c;
+  border-radius: 50%
+}
+
+.shoppingCart .shopping_top .middle .text{
+  font-size: 28rpx
+}
+
+.shoppingCart .shopping_top .right{
+  display: flex;
+  align-items: center
+}
+
+.shoppingCart .shopping_top .right .cycle{
+  width: 10rpx;
+  height: 10rpx;
+  margin-right: 10rpx;
+  border: 2rpx solid #c20c0c;
+  border-radius: 50%
+}
+
+.shoppingCart .shopping_top .right .text{
+  font-size: 28rpx
+}
+
+.shoppingCart .goodList{
+  margin-top: 20rpx
+}
+
+.shoppingCart .goodList .goods_item{
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 20rpx;
+  margin-bottom: 10rpx
+}
+
+.shoppingCart .goodList .goods_left{
+  display: flex;
+  align-items: center
+}
+
+.shoppingCart .goodList .goods_left .select{
+  width: 50rpx;
+  height: 50rpx
+}
+
+.shoppingCart .goodList .goods_left .select image{
+  width: 100%;
+  height: 100%
+}
+
+.shoppingCart .goodList .goods_left .goods_pic{
+  width: 200rpx;
+  height: 200rpx;
+  margin: 0 10rpx
+}
+
+.shoppingCart .goodList .goods_left .goods_pic image{
+  width: 100%;
+  height: 100%
+}
+
+.shoppingCart .goodList .goods_left .goods_desc{
+  font-size: 30rpx
+}
+
+
+.shoppingCart .goodList .goods_left .goods_desc .goods_price{
+  color: #c20c0c
+}
+
+.shoppingCart .submit_left{
+  display: flex;
+  margin-top: 8rpx
+}
+
+.shoppingCart .submit_left .text{
+  font-size: 26rpx;
+  line-height: 50rpx
+}
+
+.shoppingCart .submit_left .select{
+  width: 50rpx;
+  height: 50rpx;
+  margin: 0 20rpx
+}
+
+.shoppingCart .submit_left .select image{
+  width: 100%;
+  height: 100%
+}
+
+.delete{
+  background-color: #c20c0c;
+  color: white;
+  line-height: 240rpx;
+  width: 130rpx;
+  text-align: center
+}

@@ -1,0 +1,48 @@
+<view class="shoppingCart">
+  <view class="shopping_top">
+    <view class="left">
+      <view class="cycle"></view>
+      <view class="text">30天无忧退货</view>
+    </view>
+    <view class="middle">
+      <view class="cycle"></view>
+      <view class="text ">48小时快速退款</view>
+    </view>
+    <view class="right ">
+      <view class="cycle"></view>
+      <view class="text ">满88元免邮费</view>
+    </view>
+  </view>
+
+  <view class="goodList">
+    <van-swipe-cell right-width="{{ 65 }}" wx:for="{{goodsList}}" wx:key="{{index}}">
+      <van-cell-group>
+        <view class="goods_item">
+          <view class="goods_left">
+            <view class="select" bindtap="checkOne" data-item="{{item}}">
+              <image src="{{item.checked?'../../images/selected.png':'../../images/selecting.png'}}"></image>
+            </view>
+            <view class="goods_pic">
+              <image src="{{item.list_pic_url}}"></image>
+            </view>
+            <view class="goods_desc">
+              <view class="goods_name">{{item.goods_name}}</view>
+              <view class="goods_price">￥{{item.retail_price}}元</view>
+            </view>
+          </view>
+          <view class="goods_right">*{{item.number}}</view>
+        </view>
+      </van-cell-group>
+      <view slot="right" class="delete" bindtap="deleteCar" data-item="{{item}}">删除</view>
+    </van-swipe-cell>
+  </view>
+
+  <van-submit-bar price="{{ allPrise }}" button-text="提交订单" bind:submit="submitOrder">
+    <view class="submit_left">
+      <view class="select" bindtap="chooseAll">
+        <image src="{{checkAll?'../../images/selected.png':'../../images/selecting.png'}}"></image>
+      </view>
+      <view class="text">全选</view>
+    </view>
+  </van-submit-bar>
+</view>

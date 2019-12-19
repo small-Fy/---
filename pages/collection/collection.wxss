@@ -1,0 +1,51 @@
+@import '../../app.wxss';
+.collection{
+  background-color: #eee
+}
+
+.collection .header{
+  height: 150rpx;
+  line-height: 150rpx;
+  background-color: white;
+  /* margin-bottom: 10rpx; */
+  font-size: 40rpx;
+  font-weight: 700;
+  text-align: center
+}
+
+.collection .inner{
+  display: flex;
+  flex-wrap: wrap
+}
+
+.collection .inner .goodsItem{
+  width: 48%;
+  height: 400rpx;
+  margin: 10rpx 1% 0 1%;
+  background-color: white
+}
+
+.collection .inner .goodsItem .pic{
+  width: 90%;
+  height: 300rpx;
+  margin: 0 auto;
+}
+
+.collection .inner .goodsItem .pic image{
+  width: 100%;
+  height: 100%;
+}
+
+.collection .inner .goodsItem .text{
+  height: 100rpx;
+  padding: 0 20rpx
+}
+
+.collection .inner .goodsItem .text .name{
+  font-size: 32rpx
+}
+
+.collection .inner .goodsItem .text .price{
+  font-size: 32rpx;
+  color: #c20c0c
+}

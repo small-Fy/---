@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "banner": "../../components/home/banner/banner",
+    "classification": "../../components/home/classification/classification",
+    "brandList": "../../components/home/brandList/brandList",
+    "newGoods": "../../components/home/newGoods/newGoods",
+    "hotGoods": "../../components/home/hotGoods/hotGoods",
+    "topicList": "../../components/home/topicList/topicList",
+    "newCategoryList": "../../components/home/newCategoryList/newCategoryList",
+    "van-loading": "../../lib/dist/loading/index",
+    "van-search": "../../lib/dist/search/index"
+  }
+}

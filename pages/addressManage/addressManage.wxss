@@ -1,0 +1,38 @@
+.addressManage .setDefault {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+  margin-top: 40rpx
+}
+
+.addressManage .setDefault .left{
+  display: flex;
+}
+
+.addressManage .setDefault .left .checkBox{
+  width: 50rpx;
+  height: 50rpx
+}
+
+.addressManage .setDefault .left .checkBox image{
+  width: 100%;
+  height: 100%
+}
+
+.addressManage .setDefault .left .text{
+  font-size: 32rpx;
+  margin-left: 10rpx
+}
+
+.addressManage .setDefault .right{
+  font-size: 32rpx;
+  color: green
+}
+
+.addressManage .bottom{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0
+}

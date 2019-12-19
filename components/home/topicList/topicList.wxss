@@ -1,0 +1,45 @@
+@import '../../../app.wxss';
+
+.inner{
+  padding-left: 20rpx;
+  display: flex;
+}
+.inner .scroll-view-item{
+  display: inline-block;
+  width: 70%;
+  padding: 10rpx
+}
+
+.inner .scroll-view-item .picture{
+  width: 100%;
+  height: 280rpx
+}
+
+.inner .scroll-view-item .picture image{
+  width: 100%;
+  height: 100%
+}
+
+.inner .scroll-view-item .text_top{
+  display: flex;
+  align-items: center;
+  margin: 20rpx 0
+}
+
+.inner .scroll-view-item .text_top .goods_title{
+  font-size: 32rpx;
+  margin-right: 20rpx
+}
+
+.inner .scroll-view-item .text_top .goods_price{
+  font-size: 28rpx;
+  line-height: 42rpx;
+  width: 120rpx;
+  color: #c20c0c
+}
+
+.inner .scroll-view-item .goods_subtitle{
+  font-size: 28rpx;
+  color: #666
+}
+

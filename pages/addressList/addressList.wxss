@@ -1,0 +1,101 @@
+.addressList{
+  background-color: #eee
+}
+
+.noAddress{
+  font-size: 38rpx;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin-bottom: 10rpx;
+  border-bottom: 2rpx solid #666
+}
+
+.delete{
+  background-color: #c20c0c;
+  color: white;
+  line-height: 126rpx;
+  width: 100rpx;
+  text-align: center
+}
+.selected{
+  background-color: green;
+  color: white;
+  line-height: 126rpx;
+  width: 100rpx;
+  text-align: center
+}
+
+.addressList .addressItem{
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 28rpx;
+  margin-bottom: 10rpx
+}
+
+.addressList .addressItem .left{
+  display: flex;
+  align-items: center;
+}
+
+.addressList .addressItem .left .left_left{
+  margin-right: 20rpx;
+  width: 100rpx
+}
+
+.addressList .addressItem .left .left_left .username{
+  width: 100%;
+  height: 40rpx;
+  margin-bottom: 4rpx
+}
+
+.addressList .addressItem .left .left_left .tag{
+  border: 2rpx solid #c20c0c;
+  text-align: center
+}
+
+.addressList .addressItem .left .left_right .phone{
+  margin-bottom: 4rpx
+}
+
+
+.addressList .addressItem .right{
+  display: flex;
+  align-items: center
+}
+
+.addressList .addressItem .right image{
+  width: 50rpx;
+  height: 50rpx
+}
+
+.addressList .bottom{
+  position: fixed;
+  bottom: 20rpx;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around
+}
+
+.addressList .bottom .new{
+  width: 330rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  border: 2rpx solid #c20c0c;
+  color: #c20c0c;
+  border-radius: 10rpx
+}
+
+.addressList .bottom .import{
+  width: 40%;
+  text-align: center;
+  height: 70rpx;
+  line-height: 70rpx;
+  border: 2rpx solid green;
+  color: green;
+  border-radius: 16rpx
+}

@@ -1,0 +1,44 @@
+<!-- 首页 -->
+<view class="home">
+  <view class="header">
+    <view class="position">
+      <view class="notPosition" wx:if="{{!positionFlag}}" bindtap="toPosition">
+        <van-loading size="24px">定位中...</van-loading>
+      </view>
+      <view class="Positioned single_omit" wx:if="{{positionFlag}}" bindtap="toPosition">
+        {{positioning}}
+      </view>
+    </view>
+    <view class="search">
+      <van-search value="{{keyword}}" placeholder="请输入搜索关键词" shape="round" use-right-icon-slot="{{true}}" right-icon="cross" bind:focus="toSearch"/>
+    </view>
+  </view>
+
+  <banner banners="{{banners}}"></banner>
+
+  <classification channel="{{channel}}"></classification>
+
+  <view class="title">品牌制造商直供</view>
+
+  <brandList brandList="{{brandList}}"></brandList>
+
+  <view class="title_new">
+    <view class="title_name">新品首发</view>
+    <view class="show_more" bindtap="toSentiment" data-classifyFlag="isNew">查看更多</view>
+  </view>
+
+  <newGoods newGoods="{{newGoods}}"></newGoods>
+
+  <view class="title_hotGoods">
+    <view class="title_name">人气推荐·好物推荐</view>
+    <view class="show_more" bindtap="toSentiment" data-classifyFlag="isHot">查看更多</view>
+  </view>
+
+  <hotGoods hotGoods="{{hotGoods}}"></hotGoods>
+
+  <view class="title">专题精选</view>
+
+  <topicList topicList="{{topicList}}"></topicList>
+
+  <newCategoryList newCategoryList="{{newCategoryList}}"></newCategoryList>
+</view>

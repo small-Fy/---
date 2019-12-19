@@ -1,0 +1,88 @@
+@import '../../app.wxss';
+
+.classification {
+  padding: 20rpx;
+  position: relative;
+}
+
+.classification .sidebar {
+  position: absolute;
+  left: 0;
+  top: 150rpx;
+  width: 10%;
+}
+
+.classification .inner {
+  position: absolute;
+  left: 25%;
+  top: 150rpx;
+  width: 75%;
+  padding-right: 40rpx
+}
+
+.classification .inner .banner {
+  width: 95%;
+  height: 300rpx;
+  position: relative;
+}
+
+.classification .inner .banner image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.classification .inner .banner .front_desc {
+  color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.classification .inner .classification_title {
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.classification .inner .classification_title .line {
+  display: inline-block;
+  width: 70rpx;
+  border-top: 2rpx solid #ccc;
+  vertical-align: middle;
+}
+
+.classification .inner .classification_title .txt {
+  color: #686868;
+  vertical-align: middle;
+}
+
+.classification .inner .subList {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.classification .inner .subList .sub_item {
+  width: 31%;
+  height: 200rpx;
+  margin: 30rpx 1%;
+}
+
+.classification .inner .subList .sub_item .sub_picture {
+  width: 100%;
+  height: 100%;
+}
+
+.classification .inner .subList .sub_item .sub_picture image {
+  width: 100%;
+  height: 100%;
+}
+
+.classification .inner .subList .sub_item .sub_name {
+  text-align: center;
+}
